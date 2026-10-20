@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Capex Watch — Is the AI infrastructure build-out converting into revenue? | Archit Chawla</title>
+<meta name="description" content="A live tracker of AI infrastructure capital expenditure at Microsoft, Alphabet, Amazon and Meta, built entirely from SEC EDGAR filings: capex, revenue, operating cash flow, and the incremental revenue each capex dollar is producing. By Archit Chawla.">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="eyebrow">SEC Filings · Refreshed Weekly</div>
+    <h1>AI Capex Watch</h1>
+    <p class="sub">The four hyperscalers are spending at a historic rate on AI infrastructure. This tracker asks one question of their own SEC filings: <strong>is the capex converting into revenue?</strong> Every figure below is pulled from EDGAR — no estimates, no third-party data.</p>
+    <div class="byline">
+      <span>By <strong>Archit Chawla</strong></span>
+      <span class="dot">·</span>
+      <span id="asof-line">Data through the latest filed quarter</span>
+      <span class="dot">·</span>
+      <span>Source: SEC EDGAR company facts</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap page-enter">
+
+  <div class="stats" id="headline-stats">
+    <div class="stat"><div class="k">Combined TTM Capex</div><div class="v" id="stat-ttm-capex">—</div></div>
+    <div class="stat"><div class="k">Capex vs Revenue Growth (TTM YoY)</div><div class="v" id="stat-spread">—</div></div>
+    <div class="stat"><div class="k">Capex / Revenue (TTM)</div><div class="v" id="stat-intensity">—</div></div>
+    <div class="stat"><div class="k">Cumulative Capex Since 2023</div><div class="v" id="stat-cum">—</div></div>
+    <div class="stat"><div class="k">Incremental Revenue per Capex $ (TTM)</div><div class="v" id="stat-incr">—</div></div>
+  </div>
+
+  <section>
+    <h2>The combined picture</h2>
+    <p class="section-note">Quarterly capital expenditure (bars, left axis) against quarterly revenue (line, right axis) for Microsoft, Alphabet, Amazon and Meta combined, from their 10-Q and 10-K filings.</p>
+    <div class="chart-card">
+      <div class="legend">
+        <span class="legend-item"><span class="swatch sw-bar"></span>Quarterly capex</span>
+        <span class="legend-item"><span class="swatch sw-line"></span>Quarterly revenue</span>
+      </div>
+      <div id="combined-chart" class="chart-wrap"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Scorecard — latest twelve months</h2>
+    <p class="section-note">Trailing twelve months (TTM) through the latest quarter filed by all four companies. FCF after capex is operating cash flow minus capital expenditure.</p>
+    <div class="table-scroll">
+      <table class="companies">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="num">TTM Capex</th>
+            <th class="num">TTM Revenue</th>
+            <th class="num">Capex / Rev</th>
+            <th class="num">Capex YoY</th>
+            <th class="num">Revenue YoY</th>
+            <th class="num">TTM FCF After Capex</th>
+            <th class="num">Incr. Rev / Capex $</th>
+            <th class="num">Cum. Capex Since 2023</th>
+          </tr>
+        </thead>
+        <tbody id="scorecard-body"></tbody>
+      </table>
+    </div>
+    <p class="footnote">Incremental revenue per capex $ = change in TTM revenue over the last year ÷ change in TTM capex over the last year. Above 1.0, revenue is adding dollars faster than capex is.</p>
+  </section>
+
+  <section>
+    <h2>Is it converting? <span class="verdict-chip" id="verdict-chip">—</span></h2>
+    <div class="analysis" id="analysis-body"></div>
+    <p class="footnote">— Archit Chawla. Analysis is generated from the filing data above each time this page loads, so the numbers cited always match the tables.</p>
+  </section>
+
+  <section id="companies-root">
+    <h2>Company detail</h2>
+    <p class="section-note">One identical method for all four filers: single quarters derived from year-to-date 10-Q figures (see Methodology). Bars are quarterly capex; the line is capex as a % of revenue.</p>
+    <div id="company-sections"></div>
+  </section>
+
+  <section>
+    <h2>Methodology &amp; verification</h2>
+    <div class="method">
+      <p><strong>Source.</strong> All data comes from the SEC EDGAR company facts API (data.sec.gov), which republishes the XBRL facts in each company's 10-Q and 10-K filings. Nothing here is estimated or taken from a data vendor. Figures are as filed; if a company restates, the next weekly refresh picks the restated value up.</p>
+      <p><strong>Tags (us-gaap).</strong> Capex: <em>PaymentsToAcquirePropertyPlantAndEquipment</em> — for Amazon, <em>PaymentsToAcquireProductiveAssets</em>, the tag Amazon reports under today. Revenue: <em>RevenueFromContractWithCustomerExcludingAssessedTax</em>, falling back to <em>Revenues</em> / <em>SalesRevenueNet</em> — Alphabet reported under the first tag through Q1 2025 and the second after, so the series are merged by period. Operating cash flow: <em>NetCashProvidedByUsedInOperatingActivities</em>.</p>
+      <p><strong>From year-to-date filings to single quarters.</strong> Cash-flow items in a 10-Q are cumulative year-to-date amounts, not single quarters. Single quarters are recovered by differencing consecutive year-to-date values within the fiscal year: Q1 = Q1 YTD; Q2 = 6M − Q1; Q3 = 9M − 6M; Q4 = the 10-K full-year figure − 9M. Only spans beginning on the fiscal-year start date are treated as cumulatives — Amazon also tags trailing-twelve-month capex spans in its 10-Q supplements, and those are excluded from the derivation and used as a cross-check instead (below).</p>
+      <p><strong>Verification.</strong> For every company, the sum of my four derived quarters for fiscal 2024 and fiscal 2025 is reconciled to the fiscal-year capex fact in the company's 10-K. Amazon's filer-tagged TTM capex spans give a second, independent check on the built series.</p>
+      <div id="verify-body"></div>
+      <p><strong>Limitations — read these.</strong> (1) <strong>Capex here is total purchases of property and equipment, not AI-only spend.</strong> The filings do not split capex into AI and non-AI; data centers dominate the recent growth, but warehouses (Amazon), offices and other assets are in these numbers too. This is the single biggest limitation of any tracker built on filed data, including this one. (2) It is <em>cash</em> capex: assets acquired under finance leases are excluded, so headline "capex" figures some companies quote (which include finance leases) run higher — e.g. Meta's 2024 figure is $37.3B here vs the $39.2B including finance leases cited in its release. (3) Revenue is total company revenue, not AI or cloud segment revenue, so the conversion ratios are directional evidence about the whole business, not a return on AI investment in isolation — Amazon's ratio in particular is flattered by its retail base. (4) Capex leads revenue by construction and installation lags, so a point-in-time spread can look worse than the steady state; that is why I track the trend, not one quarter.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>AI Capex Watch</strong> · Built and maintained by Archit Chawla · Data: SEC EDGAR (data.sec.gov), pulled weekly by an automated pipeline from company filings.</p>
+    <p>This page is independent research published for education. It is not investment advice, a recommendation, or an offer to buy or sell any security.</p>
+    <p id="gen-stamp"></p>
+  </div>
+</footer>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
