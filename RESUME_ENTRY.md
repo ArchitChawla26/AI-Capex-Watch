@@ -2,7 +2,7 @@
 
 ## Full entry (Projects section) — concise
 
-AI Capex Watch — Live SEC-Filings Tracker | Oct 2026
+AI Capex Watch — Live SEC-Filings Tracker
 
 - Built to test the central question of the AI cycle — whether hyperscaler capex is converting into revenue: a Python pipeline pulls capex, revenue and operating cash flow for Microsoft, Alphabet, Amazon and Meta directly from SEC EDGAR, derives single quarters by differencing year-to-date 10-Q figures (Q4 = 10-K year minus nine months), and tracks capex intensity and incremental revenue per capex dollar ($510.7B combined TTM capex through Jun 2026; conversion ratio 1.27, down from 2.09 at end-2024).
 - Published as a self-updating research site: GitHub Actions rebuilds the dataset from new filings weekly and redeploys; every fiscal-year build reconciles exactly to the 10-K annual facts (8/8 checks, 0.0% difference) and to Amazon's filer-tagged TTM spans. architchawla26.github.io/AI-Capex-Watch | github.com/ArchitChawla26/AI-Capex-Watch
