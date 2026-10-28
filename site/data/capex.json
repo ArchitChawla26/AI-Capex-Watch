@@ -2,7 +2,7 @@
  "meta": {
   "title": "AI Capex Watch",
   "author": "Archit Chawla",
-  "generated_at": "2026-10-21 18:06 UTC",
+  "generated_at": "2026-10-28 18:52 UTC",
   "source": "SEC EDGAR company facts API (data.sec.gov)",
   "companies": [
    "MSFT",
@@ -1849,19 +1849,38 @@
      "ttm_capex_yoy_pct": 71.2,
      "ttm_revenue_yoy_pct": 27.7,
      "incremental_rev_per_capex": 1.33
+    },
+    {
+     "end": "2026-09-30",
+     "label": "2026 Q3",
+     "capex": 33942000000,
+     "revenue": 64601000000,
+     "ocf": 32785000000,
+     "fcf": -1157000000,
+     "capex_pct_revenue": 52.54,
+     "capex_yoy_pct": 80.3,
+     "revenue_yoy_pct": 26.1,
+     "ttm_capex": 104438000000,
+     "ttm_revenue": 241605000000,
+     "ttm_ocf": 133087000000,
+     "ttm_fcf": 28649000000,
+     "ttm_capex_pct_revenue": 43.23,
+     "ttm_capex_yoy_pct": 66.5,
+     "ttm_revenue_yoy_pct": 27.5,
+     "incremental_rev_per_capex": 1.25
     }
    ],
-   "cumulative_capex_since_2023": 183105000000,
+   "cumulative_capex_since_2023": 217047000000,
    "latest": {
-    "label": "2026 Q2",
-    "end": "2026-06-30",
-    "ttm_capex": 89325000000,
-    "ttm_revenue": 228247000000,
-    "ttm_capex_pct_revenue": 39.14,
-    "ttm_capex_yoy_pct": 71.2,
-    "ttm_revenue_yoy_pct": 27.7,
-    "ttm_fcf": 40976000000,
-    "incremental_rev_per_capex": 1.33
+    "label": "2026 Q3",
+    "end": "2026-09-30",
+    "ttm_capex": 104438000000,
+    "ttm_revenue": 241605000000,
+    "ttm_capex_pct_revenue": 43.23,
+    "ttm_capex_yoy_pct": 66.5,
+    "ttm_revenue_yoy_pct": 27.5,
+    "ttm_fcf": 28649000000,
+    "incremental_rev_per_capex": 1.25
    }
   }
  },
