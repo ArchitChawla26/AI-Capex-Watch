@@ -2,7 +2,7 @@
  "meta": {
   "title": "AI Capex Watch",
   "author": "Archit Chawla",
-  "generated_at": "2026-10-28 18:52 UTC",
+  "generated_at": "2026-11-04 20:26 UTC",
   "source": "SEC EDGAR company facts API (data.sec.gov)",
   "companies": [
    "MSFT",
@@ -10,8 +10,8 @@
    "AMZN",
    "META"
   ],
-  "latest_quarter": "2026 Q2",
-  "latest_quarter_end": "2026-06-30",
+  "latest_quarter": "2026 Q3",
+  "latest_quarter_end": "2026-09-30",
   "display_from": "2022 Q1",
   "cumulative_from": "2023 Q1"
  },
@@ -358,19 +358,38 @@
     "ttm_capex_yoy_pct": 75.3,
     "ttm_revenue_yoy_pct": 18.6,
     "incremental_rev_per_capex": 1.27
+   },
+   {
+    "end": "2026-09-30",
+    "label": "2026 Q3",
+    "capex": 201923000000,
+    "revenue": 486401000000,
+    "ocf": 175497000000,
+    "fcf": -26426000000,
+    "capex_pct_revenue": 41.51,
+    "capex_yoy_pct": 107.6,
+    "revenue_yoy_pct": 18.2,
+    "ttm_capex": 615355000000,
+    "ttm_revenue": 1856603000000,
+    "ttm_ocf": 676816000000,
+    "ttm_fcf": 61461000000,
+    "ttm_capex_pct_revenue": 33.14,
+    "ttm_capex_yoy_pct": 86.6,
+    "ttm_revenue_yoy_pct": 19.0,
+    "incremental_rev_per_capex": 1.04
    }
   ],
-  "cumulative_capex_since_2023": 1046420000000,
+  "cumulative_capex_since_2023": 1248343000000,
   "latest": {
-   "label": "2026 Q2",
-   "end": "2026-06-30",
-   "ttm_capex": 510703000000,
-   "ttm_revenue": 1781632000000,
-   "ttm_capex_pct_revenue": 28.66,
-   "ttm_capex_yoy_pct": 75.3,
-   "ttm_revenue_yoy_pct": 18.6,
-   "ttm_fcf": 149611000000,
-   "incremental_rev_per_capex": 1.27
+   "label": "2026 Q3",
+   "end": "2026-09-30",
+   "ttm_capex": 615355000000,
+   "ttm_revenue": 1856603000000,
+   "ttm_capex_pct_revenue": 33.14,
+   "ttm_capex_yoy_pct": 86.6,
+   "ttm_revenue_yoy_pct": 19.0,
+   "ttm_fcf": 61461000000,
+   "incremental_rev_per_capex": 1.04
   }
  },
  "companies": {
@@ -732,19 +751,38 @@
      "ttm_capex_yoy_pct": 79.6,
      "ttm_revenue_yoy_pct": 17.8,
      "incremental_rev_per_capex": 0.98
+    },
+    {
+     "end": "2026-09-30",
+     "label": "2026 Q3",
+     "capex": 39367000000,
+     "revenue": 92279000000,
+     "ocf": 58000000000,
+     "fcf": 18633000000,
+     "capex_pct_revenue": 42.66,
+     "capex_yoy_pct": 103.0,
+     "revenue_yoy_pct": 18.8,
+     "ttm_capex": 135921000000,
+     "ttm_revenue": 346445000000,
+     "ttm_ocf": 195878000000,
+     "ttm_fcf": 59957000000,
+     "ttm_capex_pct_revenue": 39.23,
+     "ttm_capex_yoy_pct": 96.9,
+     "ttm_revenue_yoy_pct": 17.9,
+     "incremental_rev_per_capex": 0.79
     }
    ],
-   "cumulative_capex_since_2023": 240526000000,
+   "cumulative_capex_since_2023": 279893000000,
    "latest": {
-    "label": "2026 Q2",
-    "end": "2026-06-30",
-    "ttm_capex": 115948000000,
-    "ttm_revenue": 331839000000,
-    "ttm_capex_pct_revenue": 34.94,
-    "ttm_capex_yoy_pct": 79.6,
-    "ttm_revenue_yoy_pct": 17.8,
-    "ttm_fcf": 66987000000,
-    "incremental_rev_per_capex": 0.98
+    "label": "2026 Q3",
+    "end": "2026-09-30",
+    "ttm_capex": 135921000000,
+    "ttm_revenue": 346445000000,
+    "ttm_capex_pct_revenue": 39.23,
+    "ttm_capex_yoy_pct": 96.9,
+    "ttm_revenue_yoy_pct": 17.9,
+    "ttm_fcf": 59957000000,
+    "incremental_rev_per_capex": 0.79
    }
   },
   "GOOGL": {
@@ -1104,19 +1142,38 @@
      "ttm_capex_yoy_pct": 97.7,
      "ttm_revenue_yoy_pct": 20.1,
      "incremental_rev_per_capex": 1.14
+    },
+    {
+     "end": "2026-09-30",
+     "label": "2026 Q3",
+     "capex": 51355000000,
+     "revenue": 127577000000,
+     "ocf": 42290000000,
+     "fcf": -9065000000,
+     "capex_pct_revenue": 40.25,
+     "capex_yoy_pct": 114.4,
+     "revenue_yoy_pct": 24.7,
+     "ttm_capex": 159804000000,
+     "ttm_revenue": 471098000000,
+     "ttm_ocf": 179551000000,
+     "ttm_fcf": 19747000000,
+     "ttm_capex_pct_revenue": 33.92,
+     "ttm_capex_yoy_pct": 105.2,
+     "ttm_revenue_yoy_pct": 22.2,
+     "incremental_rev_per_capex": 1.05
     }
    ],
-   "cumulative_capex_since_2023": 256831000000,
+   "cumulative_capex_since_2023": 308186000000,
    "latest": {
-    "label": "2026 Q2",
-    "end": "2026-06-30",
-    "ttm_capex": 132402000000,
-    "ttm_revenue": 445866000000,
-    "ttm_capex_pct_revenue": 29.7,
-    "ttm_capex_yoy_pct": 97.7,
-    "ttm_revenue_yoy_pct": 20.1,
-    "ttm_fcf": 53273000000,
-    "incremental_rev_per_capex": 1.14
+    "label": "2026 Q3",
+    "end": "2026-09-30",
+    "ttm_capex": 159804000000,
+    "ttm_revenue": 471098000000,
+    "ttm_capex_pct_revenue": 33.92,
+    "ttm_capex_yoy_pct": 105.2,
+    "ttm_revenue_yoy_pct": 22.2,
+    "ttm_fcf": 19747000000,
+    "incremental_rev_per_capex": 1.05
    }
   },
   "AMZN": {
@@ -1477,19 +1534,38 @@
      "ttm_capex_yoy_pct": 60.7,
      "ttm_revenue_yoy_pct": 15.8,
      "incremental_rev_per_capex": 1.62
+    },
+    {
+     "end": "2026-09-30",
+     "label": "2026 Q3",
+     "capex": 77259000000,
+     "revenue": 201944000000,
+     "ocf": 42422000000,
+     "fcf": -34837000000,
+     "capex_pct_revenue": 38.26,
+     "capex_yoy_pct": 120.1,
+     "revenue_yoy_pct": 12.1,
+     "ttm_capex": 215192000000,
+     "ttm_revenue": 797455000000,
+     "ttm_ocf": 168300000000,
+     "ttm_fcf": -46892000000,
+     "ttm_capex_pct_revenue": 26.98,
+     "ttm_capex_yoy_pct": 79.1,
+     "ttm_revenue_yoy_pct": 15.4,
+     "incremental_rev_per_capex": 1.12
     }
    ],
-   "cumulative_capex_since_2023": 365958000000,
+   "cumulative_capex_since_2023": 443217000000,
    "latest": {
-    "label": "2026 Q2",
-    "end": "2026-06-30",
-    "ttm_capex": 173028000000,
-    "ttm_revenue": 775680000000,
-    "ttm_capex_pct_revenue": 22.31,
-    "ttm_capex_yoy_pct": 60.7,
-    "ttm_revenue_yoy_pct": 15.8,
-    "ttm_fcf": -11625000000,
-    "incremental_rev_per_capex": 1.62
+    "label": "2026 Q3",
+    "end": "2026-09-30",
+    "ttm_capex": 215192000000,
+    "ttm_revenue": 797455000000,
+    "ttm_capex_pct_revenue": 26.98,
+    "ttm_capex_yoy_pct": 79.1,
+    "ttm_revenue_yoy_pct": 15.4,
+    "ttm_fcf": -46892000000,
+    "incremental_rev_per_capex": 1.12
    }
   },
   "META": {
@@ -2006,6 +2082,13 @@
      "quarter_end": "2026-06-30",
      "build_ttm_capex": 173028000000,
      "filer_tagged_ttm_capex": 173028000000,
+     "diff_pct": 0.0,
+     "within_2pct": true
+    },
+    {
+     "quarter_end": "2026-09-30",
+     "build_ttm_capex": 215192000000,
+     "filer_tagged_ttm_capex": 215192000000,
      "diff_pct": 0.0,
      "within_2pct": true
     }
